@@ -17,7 +17,7 @@ for ($x = 0; $x < 5; $x++) {
 }
 
 // foreach
-$y = array(0, 1, 2, 3, 4);
+$y = array (0, 1, 2, 3, 4);
 foreach ($y as $z) {
     echo '<pre>';
     print_r($z);
