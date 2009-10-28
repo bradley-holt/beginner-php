@@ -5,30 +5,30 @@ $isBar = true;
 
 // if-then-else
 if ($isFoo) {
-    echo 'Is Foo.';
+    echo '<p>Is Foo</p>';
 } elseif ($isBar) {
-    echo 'Is Bar.';
+    echo '<p>Is Bar</p>';
 } else {
-    echo 'Something else.';
+    echo '<p>Something else</p>';
 }
 
 //switch
 $a = 15;
 switch ($a) {
     case 5:
-        echo 'Five';
+        echo '<p>Five</p>';
         break;
     case 10:
-        echo 'Ten';
+        echo '<p>Ten</p>';
         break;
     case 15:
-        echo 'Fifteen';
+        echo '<p>Fifteen</p>';
         break;
     case 20:
-        echo 'Twenty';
+        echo '<p>Twenty</p>';
         break;
     default:
-        echo 'Something else';
+        echo '<p>Something else</p>';
         break;
 }
 

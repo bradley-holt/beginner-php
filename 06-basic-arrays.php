@@ -3,7 +3,9 @@
 $foo[] = 'bar';
 $foo[] = 'baz';
 
+echo '<pre>';
 print_r($foo);
+echo '</pre>';
 /*
 Array
 (

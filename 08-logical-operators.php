@@ -5,17 +5,17 @@ $isFoo = false;
 
 // NOT
 if (!$isAwesome) {
-    echo 'This will not echo.';
+    echo '<p>This will not echo.</p>';
 }
 
 // AND
 if ($isAwesome && $isFoo) {
-    echo 'This will not echo.';
+    echo '<p>This will not echo.</p>';
 }
 
 // OR
 if ($isAwesome || $isFoo) {
-    echo 'This will echo.';
+    echo '<p>This will echo.</p>';
 }
 
 ?>
