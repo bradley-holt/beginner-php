@@ -10,7 +10,8 @@ $link = mysqli_connect(
 );
 
 if (isset($_POST['person'])) {
-    $person = $_POST['person'];
+    // filter input
+    $person = mysqli_real_escape_string($link, $_POST['person']);
     $sql = "INSERT INTO person (name) VALUES ('" . $person . "')";
     mysqli_query($link, $sql);
 }
