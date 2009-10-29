@@ -10,13 +10,10 @@ $link = mysqli_connect(
 );
 
 if (isset($_POST['person'])) {
-    // filter input by using bound parameters
-    $sql = "INSERT INTO person (name) VALUES (?)";
-    $statement = mysqli_prepare($link, $sql);
-    // i = integer, d = double, s = string, b = blob
-    mysqli_stmt_bind_param($statement, 's', $_POST['person']);
-    mysqli_stmt_execute($statement);
-    mysqli_stmt_close($statement);
+    // filter input
+    $person = mysqli_real_escape_string($link, $_POST['person']);
+    $sql = "INSERT INTO person (name) VALUES ('" . $person . "')";
+    mysqli_query($link, $sql);
 }
 
 $sql = 'SELECT person_id, name FROM person';
