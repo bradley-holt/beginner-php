@@ -15,7 +15,7 @@ if (isset($_GET['person'])) {
   <p>Hello, <?= htmlspecialchars($person) ?></p>
   <p><a href="<?= $_SERVER['PHP_SELF'] ?>">clear</a></p>
 <? endif; ?>
-  <form action="" method="GET" action="<?= $_SERVER['PHP_SELF'] ?>">
+  <form method="GET" action="<?= $_SERVER['PHP_SELF'] ?>">
     <dl>
       <dt>Say hello to</dt>
       <dd><input type="text" name="person" value="<?= htmlspecialchars($person) ?>" /></dd>
